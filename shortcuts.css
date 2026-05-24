@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: black;
+    color: white;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Container */
+
+.shortcuts-container{
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Heading */
+
+.shortcuts-container h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+/* Back Button */
+
+.back-btn{
+    display: inline-block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    background: white;
+    color: black;
+}
+
+/* Grid */
+
+.shortcut-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+/* Cards */
+
+.shortcut-card{
+    background: #111;
+    padding: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.shortcut-card:hover{
+    transform: translateY(-5px);
+    background: red;
+}

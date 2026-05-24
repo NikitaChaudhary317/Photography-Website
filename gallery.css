@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: black;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Main Container */
+
+.gallery-container{
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Heading */
+
+h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+/* Back Button */
+
+.back-btn{
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    background: white;
+    color: black;
+}
+
+/* Slider */
+
+.slider{
+    margin-top: 20px;
+}
+
+.slider img{
+    width: 100%;
+    max-width: 700px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+/* Upload Input */
+
+#uploadImage{
+    margin-top: 25px;
+    color: white;
+}
+
+/* Preview Image */
+
+.preview-image{
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+/* Buttons */
+
+.buttons{
+    margin-top: 20px;
+}
+
+.buttons button{
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.buttons button:hover{
+    transform: scale(1.05);
+    background: red;
+    color: white;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    h1{
+        font-size: 30px;
+    }
+
+    .slider img{
+        height: 250px;
+    }
+
+    .preview-image{
+        width: 90%;
+    }
+
+}

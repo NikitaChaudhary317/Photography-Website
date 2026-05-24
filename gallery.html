@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+
+<body>
+
+    <div class="gallery-container">
+
+        <a href="index.html" class="back-btn">← Back To Home</a>
+
+        <h1>My Gallery</h1>
+
+        <div class="slider">
+
+            <img id="slideImage" src="images/bg1.jpg">
+
+        </div>
+
+        <input type="file" id="uploadImage">
+
+        <br><br>
+
+        <img id="preview" class="preview-image">
+
+        <div class="buttons">
+
+            <button onclick="prevImage()">Previous</button>
+
+            <button onclick="nextImage()">Next</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

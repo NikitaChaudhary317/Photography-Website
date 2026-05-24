@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: black;
+    color: white;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Container */
+
+.events-container{
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Heading */
+
+.events-container h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+/* Back Button */
+
+.back-btn{
+    display: inline-block;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    background: white;
+    color: black;
+}
+
+/* Event Cards */
+
+.event-card{
+    background: #111;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.event-card:hover{
+    transform: translateY(-5px);
+}
+
+.event-card h2{
+    margin-bottom: 10px;
+}
+
+.event-card p{
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .events-container h1{
+        font-size: 30px;
+    }
+
+}

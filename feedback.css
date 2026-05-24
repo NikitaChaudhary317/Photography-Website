@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: black;
+    color: white;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Container */
+
+.feedback-container{
+    width: 100%;
+    max-width: 600px;
+
+    background: #111;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+/* Heading */
+
+.feedback-container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Back Button */
+
+.back-btn{
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    text-decoration: none;
+
+    color: white;
+
+    border: 1px solid white;
+
+    padding: 10px 20px;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.back-btn:hover{
+    background: white;
+    color: black;
+}
+
+/* Form */
+
+.feedback-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form input,
+.feedback-form textarea{
+
+    margin-bottom: 20px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+/* Button */
+
+.feedback-form button{
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: black;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.feedback-form button:hover{
+
+    background: red;
+
+    color: white;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .feedback-container{
+        padding: 25px;
+    }
+
+}
